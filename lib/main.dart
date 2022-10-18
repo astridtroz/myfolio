@@ -1,4 +1,6 @@
+import 'dart:io';
 import 'dart:ui';
+
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -11,6 +13,8 @@ void main(){
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,13 +24,14 @@ class MyApp extends StatelessWidget {
 
            
      body: Container(
-   
+
+
        child:SingleChildScrollView(
+         reverse: true,
 
              child: Column(
 
                children:  <Widget>[
-
 
 
                       Stack(
@@ -46,6 +51,7 @@ class MyApp extends StatelessWidget {
                               child: Container(
                                 margin: EdgeInsets.only(bottom: 0),
                                 child: const Center(
+
 
                                   heightFactor:17,
                                   child: Text("Saumya Srivastava\n"
@@ -127,16 +133,165 @@ class MyApp extends StatelessWidget {
                    ),
                  ),
 
-               
 
 
 
 
-              
+
+              Container(
+               child: SingleChildScrollView(
+                 reverse: true,
+                  scrollDirection: Axis. horizontal,
+                child:Column(
+                 children:<Widget>[
+
+                  Container(
+                child: Row(
+                  children: <Widget> [
+                     CircleAvatar(
+
+                        backgroundColor: Colors.deepPurple[400],
+                        radius: 80,
+                          child: ClipRRect(
+                            borderRadius:BorderRadius.circular(50),
+                            child: Image.asset("images/javaimage.webp"),
+                          )
+
+                      ),
+
+                    SizedBox(
+                      width: 20,
+                    ),
+                    CircleAvatar(
+                        backgroundColor: Colors.deepPurple[400],
+                        radius:80,
+                          child: ClipRRect(
+                            borderRadius:BorderRadius.circular(50),
+                            child: Image.asset("images/flutterimage.png"),
+                          )
+                      ),
+
+                    SizedBox(
+                      width: 20,
+                    ),
+                    CircleAvatar(
+                      backgroundColor: Colors.deepPurple[400],
+                        radius:80,
+                        child: ClipRRect(
+                          borderRadius:BorderRadius.circular(50),
+                          child: Image.asset("images/cppimage.webp"),
+                        )
+                    ),
+
+                  ],
+                ),
+                  ),
+                   Container(
+                     margin: EdgeInsets.only(),
+                     child: Row(
+                        children: [
+                          Text("JAVA           FLUTTER             C++",
+                          style: TextStyle(
+                            fontSize: 30,
+                            fontFamily: 'SpaceGrotesk',
+                          ),
+                          ),
+                        ],//children end
+                     ),
+
+                   ),
+                   SizedBox(
+                     height: 20,
+                   ),
+                   Container(
+                     width: 50,
+                     height: 1,
+                     color: Colors.black,
+                   ),
+                   SizedBox(
+                     height: 10,
+                   ),
+
+                 ],
+
+                ),
+
+                ),
+              ),
+
+               Container(
+                 child: Text(
+                   'Contact me',
+
+                   style: TextStyle(
+                     fontSize: 30,
+                     fontFamily: 'Lobster',
+                   ),
+                 ),
+               ),
+
+               Container(
+                 margin: EdgeInsets.all(15),
+                 color: Colors.deepPurple[100],
+                child: Row(
+                   children: <Widget>[
+                     Padding(
+                       padding: const EdgeInsets.only(left: 50),
+                       child: Icon(Icons.phone,
+                       color: Colors.black,
+                       size: 30,),
+                     ),
+                     Padding(
+                       padding: const EdgeInsets.only(left: 20),
+                       child: Text('9140370770',
+                       style: TextStyle(
+                         fontSize: 30,
+                       ),),
+                     ),
+
+                   ],
+                 ),
+
+               ),
+                 Container(
+                   margin: EdgeInsets.all(15),
+                   color: Colors.deepPurple[100],
+                   child: Row(
+                     children: <Widget>[
+                       Padding(
+                         padding: const EdgeInsets.only(left: 50),
+                         child: Icon(Icons.email,
+                         color: Colors.black,
+                         size: 30,),
+                       ),
+                       Padding(
+                         padding: const EdgeInsets.only(left: 20,),
+                         child: Text('saumyasri@gmail.com',
+                         style: TextStyle(
+                           fontSize: 20,
+                           color: Colors.black,
+                         ),),
+                       )
+
+                     ],
+                   ),
+                 ),
+
+               SizedBox(
+                 width: 20,
+                   height: 20,
+               ),
+
                ],
+
              ),
 
+
+
      ),
+
+
+
      ),
 
        ),
