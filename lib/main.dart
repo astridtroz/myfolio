@@ -102,7 +102,7 @@ class MyApp extends StatelessWidget {
                           padding: EdgeInsets.all(0),
                            child: Container(
                              width: 500,
-                             margin: EdgeInsets.only(top: 870,left: 33,right:20),
+                             margin: EdgeInsets.only(top: 870,left: 36,right:40),
 
 
 
