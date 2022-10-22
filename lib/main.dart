@@ -91,32 +91,32 @@ class MyApp extends StatelessWidget {
                                  blurRadius: 25.0,
                                ),
 
+
                              ],
                            ),
                            child: Container(
                              color: Colors.black,
-                           ),
-                         ),
-                         Padding(
-
-                          padding: EdgeInsets.all(0),
-                           child: Container(
-                             width: 500,
-                             margin: EdgeInsets.only(top: 870,left: 36,right:40),
 
 
 
-                               child: Text("ABOUT:\n\nHello, I am Saumya Srivastava. I am pursuing Btech in Computer Science from Ajay Kumar Garg Engineering College. I am a flutter developer and a CP enthusiast and have been exploring the same domains for sometime now and working on flutter development. My skills include a breif knowldege in languages such as Java , C and C++.I also take interest in Web Development and work on HTML and CSS. Some other activities that fascinate me are poetry writing and reading novels and articles.",
-                                 style: TextStyle(
 
-                                   fontSize: 18,
-                                   fontFamily:'Lobster' ,
-                                   color: Colors.white,
+                                 child: Padding(
+                                   padding: const EdgeInsets.all(8.0),
+                                   child: Text("ABOUT:\n\nHello, I am Saumya Srivastava. I am pursuing Btech in Computer Science from Ajay Kumar Garg Engineering College. I am a flutter developer and a CP enthusiast and have been exploring the same domains for sometime now and working on flutter development. My skills include a breif knowldege in languages such as Java , C and C++.I also take interest in Web Development and work on HTML and CSS. Some other activities that fascinate me are poetry writing and reading novels and articles.",
+                                     style: TextStyle(
+
+                                       fontSize: 18,
+                                       fontFamily:'Lobster' ,
+                                       color: Colors.white,
+                                     ),
+                                   ),
                                  ),
-                               ),
+
+
 
                            ),
                          ),
+
 
 
 
